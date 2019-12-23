@@ -94,16 +94,16 @@ export default class Navbar extends React.Component {
                 onClick={this.toggleMenu}>
                 <FiMenu />
               </button>
-              <Link to="/" className="nav-title display ttu tracked washed-red f3 no-underline">{data.site.siteMetadata.siteTitle}</Link>
-              <Link to="/" className="sans-serif ttu mid-gray f5 no-underline dn dib-l">HOME</Link>
+              <Link to="/" className="nav-title display ttu tracked washed-red f3 no-underline hover">{data.site.siteMetadata.siteTitle}</Link>
+              <Link to="/" className="sans-serif ttu mid-gray f5 no-underline dn dib-l grow-large grow-active shadow-hover">HOME</Link>
               {data.site.siteMetadata.navbarLinks.map(navLink => (
-                <MultiLink to={navLink.to} className="sans-serif ttu mid-gray f5 no-underline dn dib-l">{navLink.name}</MultiLink>
+                <MultiLink to={navLink.to} className="sans-serif ttu mid-gray f5 no-underline dn dib-l grow-large grow-active shadow-hover">{navLink.name}</MultiLink>
               ))}
             </div>
             <div className="dn w-100 mw5 flex-l justify-around items-center">
-            <Link to="/bookappointment"  className="sans-serif ttu light-red f5 no-underline dn dib-l">BOOK APPOINTMENT</Link>
+            <Link to="/bookappointment"  className="sans-serif ttu light-red f5 no-underline dn dib-l grow-large grow-active shadow-hover">BOOK APPOINTMENT</Link>
               <span className="sans-serif mid-gray dn dib-l">|</span>
-              <Link to="/about" className="sans-serif ttu mid-gray f5 no-underline dn dib-l">ABOUT</Link>
+              <Link to="/about" className="sans-serif ttu mid-gray f5 no-underline dn dib-l grow-large grow-active shadow-hover">ABOUT</Link>
             </div>
           </div>
           <SliderMenu

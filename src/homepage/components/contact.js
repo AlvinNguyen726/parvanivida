@@ -13,72 +13,72 @@ export default class MyForm extends React.Component {
     const { status } = this.state;
     return (
       <section className="flex">
-      <div className="form center bg-washed-red">
+      <div className="form center bg-washed-red shadow-5">
         <form className="mt-10"
           onSubmit={this.submitForm}
-          action="https://formspree.io/sales@parvanivida.com"
+          action="https://formspree.io/xjvgbggv"
           method="POST">
       
-      <h1 className="fw1 display db dark-gray f2 tc">Reserve An Appointment</h1>
+      <h1 className="fw1 display db dark-gray f2 tc">Book Appointment</h1>
 
-      <div className="mt5 center">
+      <div className="mt5 mh6">
         <label className="db fw6 mb1" for="name">Name</ label>
-        <input className="b pa2 input-reset " 
+        <input className="b pa2 input-reset" 
         type="text" 
         className="form-control"
-        name="name"
-        id="name"
+        name="Name"
+        id="Name"
         placeholder="First Last"
         />   
       </div>
-      <div className="mt4 center">
+      <div className="mt4 mh6">
         <label className="db fw6 mb1" for="name">Email</ label>
         <input className="b pa2 input-reset " 
         type="text" 
         className="form-control"
-        name="name"
-        id="name"
+        name="Email"
+        id="Email"
         placeholder="email@email.com"
         />   
       </div>
-      <div className="mt4 center">
+      <div className="mt4 mh6">
         <label className="db fw6 mb1" for="name">Phone</ label>
         <input className="b pa2 input-reset " 
-        type="phone number" 
+        type="tel" 
         className="form-control"
-        name="name"
-        id="name"
+        name="Phone"
+        id="Phone"
         placeholder="(###)###-####"
         />   
       </div>
-      <div className="mt4 center">
+      <div className="mt4 mh6 w-100">
         <label className="db fw6 mb1" for="name">Preferred Appointment Date</ label>
-        <input className="b pa2 input-reset " 
+        <input className="b input-reset " 
         type="Date" 
         className="form-control"
-        name="name"
-        id="name"
+        name="Date"
+        id="Date"
         placeholder="mm/dd/yyyy"
         />   
       </div>
-      <div className="mt4 center">
+      <div className="mt4 mh6">
         <label className="db fw6 mb1" for="name">Message</ label>
-        <input className="b pa2 input-reset " 
+        <input className="b pa2 input-reset" 
         type="text" 
         className="form-control"
-        name="name"
-        id="name"
+        name="Message"
+        id="Message"
         placeholder="Optional"
         />   
       </div>
 
 
 
-        {status === "SUCCESS" ? <p className="db mt4 pv3 ph5 tracked ttu b bg-washed-red dark-gray sans-serif no-underline center">Thank you! Your Appointment reqeust has been sent!</p> : <button type = "submit" className="db mt4 pv3 ph5 tracked ttu b bg-washed-red dark-gray sans-serif no-underline hover-gray pointer center ">Book Now</button>}
+        {status === "SUCCESS" ? <p className="db mt4 pv3 ph5 tracked ttu b bg-washed-red dark-gray sans-serif no-underline center">Thank you! Your Appointment request has been sent!</p> : <button type = "submit" className="db mt4 pv3 ph5 tracked ttu b bg-washed-red dark-gray sans-serif no-underline hover-gray pointer center ">Book Now</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
       </div>
-      <div className="store-info center bg-washed-red">
+      <div className="store-info center bg-washed-red shadow-5">
 
         <h1 className="fw1 display db dark-gray f3 tc">Store Hours</h1>
         <h2 className="mt4 db tc fw1 dark-gray f5">Monday: 10AM - 6PM</h2>
